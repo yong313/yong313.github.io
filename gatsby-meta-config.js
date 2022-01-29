@@ -14,7 +14,7 @@ module.exports = {
     name: `전용태`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      description: ['새로운 도약을 꿈꾸는', '열정적인 자세의', '이로운 것을 만드는'],
       thumbnail: 'main.gif', // Path to the image in the 'asset' folder
     },
     social: {

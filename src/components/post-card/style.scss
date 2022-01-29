@@ -26,6 +26,8 @@
     &:hover {
       .title {
         text-decoration: underline;
+        color: var(--tab-selected-background-color);
+        transition: all 0.25s ease;
       }
     }
 

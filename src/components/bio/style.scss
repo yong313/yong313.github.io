@@ -44,6 +44,7 @@
     }
 
     &.korean {
+      width: 50%;
       font-weight: 100;
       font-size: 32px;
       line-height: 1.2;
@@ -52,6 +53,11 @@
         .react-rotating-text-cursor {
           font-size: 35px;
           line-height: 35px;
+          background-color:transparent;
+        }
+        span {
+          background-color: #2074EF;
+          color: #fff !important;
         }
       }
 
@@ -103,6 +109,7 @@
   .thumbnail-wrapper {
     display: none;
     width: 250px;
+    margin-right: 50px;
 
     @include md {
       display: block;
