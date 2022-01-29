@@ -1,3 +1,3 @@
-<h1 align="center">
+<h1>
   yong313 Gatsby Blog
 </h1>
