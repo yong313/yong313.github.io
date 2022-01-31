@@ -47,7 +47,7 @@ module.exports = {
         activity: '생드백 프로젝트 개발 및 운영',
         links: {
           post: '',
-          github: 'https://github.com/yong313',
+          github: 'https://github.com/thandbag/thandbag_FE',
           demo: 'https://thandbag.com/',
         },
       },
