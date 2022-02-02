@@ -43,7 +43,7 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.11 ~ 2022.02',
+        date: '2021.12 ~ 2022.01',
         activity: '생드백 프로젝트 개발 및 운영',
         links: {
           post: '',
@@ -78,7 +78,7 @@ module.exports = {
         techStack: ['react', 'redux', 'pwa', 'amazon s3'],
         thumbnailUrl: 'thandbag_play.gif',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
+          post: '',
           github: 'https://github.com/thandbag/thandbag_FE',
           demo: 'https://thandbag.com/',
         },
