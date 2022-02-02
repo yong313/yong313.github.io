@@ -5,13 +5,10 @@ function PageFooter({ author, githubUrl }) {
   return (
     <footer className="page-footer-wrapper">
       <p className="page-footer">
-        © {new Date().getFullYear()}
         &nbsp;
-        <a href={githubUrl}>{author}</a>
-        &nbsp;powered by
-        <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
-          &nbsp;zoomkoding
-        </a>
+        조금씩 천천히 매일매일 기록하자 👊
+        &nbsp;
+        <a href={githubUrl}>github.com/yong313</a>
       </p>
     </footer>
   );
