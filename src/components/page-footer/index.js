@@ -6,7 +6,7 @@ function PageFooter({ author, githubUrl }) {
     <footer className="page-footer-wrapper">
       <p className="page-footer">
         &nbsp;
-        조금씩 천천히 매일매일 기록하자 👊
+        조금씩 매일매일 기록하자 👊
         &nbsp;
         <a href={githubUrl}>github.com/yong313</a>
       </p>
