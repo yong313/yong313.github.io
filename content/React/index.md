@@ -15,7 +15,7 @@ categories: React
 
 웹 페이지를 만들기에는 html, css로도 충분하지만 html, css 만으로 동적인 데이터를 UI에 뿌려주기에는 적합하지 않다. 이 때 리액트를 이용한다면 `사용자와 상호작용할 수 있는 UI를 손쉽게 만들 수 있기때문에` 리액트를 사용!!
 
->[React 공식 홈페이지](https://reactjs-kr.firebaseapp.com/), 
+>[React 공식 홈페이지](https://reactjs-kr.firebaseapp.com/),
 >[위키백과 - React](https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9B%B9_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC))
 <br />
 
@@ -47,8 +47,12 @@ Virtual DOM에서 이러한 연산이 끝나고 나면, 최종적인 변화를 �
 
 또한, Virtual DOM은 어떤 게 바뀌었는지, 어떤 게 바뀌지 않았는지 자동으로 파악하여 필요한 DOM 트리만 업데이트할 수 있게 해준다.
 
+<br />
+
 ## 🎉 마무리
 
 React는 사용자와 상호작용할 수 있는 UI를 손쉽게 만들 수 있으며,
 Component 단위 작성을 통해 생산성과 유지보수에 용이하다.
 
+<br />
+<br />
