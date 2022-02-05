@@ -9,7 +9,7 @@ categories: React
 
 ![modal.gif](modal.gif)
 
-## Modla 만들기 🛠
+## Modal 만들기 🛠
 
 웹서비스를 만들때 자주 사용하게 되는 모달(팝업)을 만들어 보자!! 프로젝트 구조는 다음과 같다. Modal 컴포넌트를 App.js에 불러와서 사용
 
