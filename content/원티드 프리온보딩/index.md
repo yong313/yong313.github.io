@@ -1,15 +1,15 @@
 ---
 emoji: 🍔
-title: Modal 만들기 - 원티드 프리온보딩
+title: Modal 만들기
 date: '2022-02-05 23:15:00'
 author: 전용태
-tags: 원티드, 프리온보딩, 모달만들기 ,Modal
-categories: 원티드프리온보딩
+tags: 모달만들기, Modal, React Modal
+categories: React
 ---
 
 ![modal.gif](modal.gif)
 
-## 원티드 프리온보딩 - Modla 만들기 🛠
+## Modla 만들기 🛠
 
 웹서비스를 만들때 자주 사용하게 되는 모달(팝업)을 만들어 보자!! 프로젝트 구조는 다음과 같다. Modal 컴포넌트를 App.js에 불러와서 사용
 
