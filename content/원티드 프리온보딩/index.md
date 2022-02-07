@@ -215,3 +215,4 @@ const ModalContents = styled.div`
 > - stopPropagation 메서드를 사용하여 오픈 된 모달 영역을 클릭 시에는 모달창이 닫히지 않지만 모달영역 이외의 공간 을 클릭시 모달을 닫을 수 있도록 편의성을 높였습니다.
 
 <br />
+<br />
