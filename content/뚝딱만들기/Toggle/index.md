@@ -4,7 +4,7 @@ title: Toggle 만들기
 date: '2022-02-08 09:23:00'
 author: 전용태
 tags: 모달만들기, Toggle, ReactToggle
-categories: React
+categories: 뚝딱만들기
 ---
 
 ![toggle.gif](toggle.gif)

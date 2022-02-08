@@ -4,7 +4,7 @@ title: Tag 만들기
 date: '2022-02-08 09:45:00'
 author: 전용태
 tags: 모달만들기, Tag, ReactTag
-categories: React
+categories: 뚝딱만들기
 ---
 
 ![tag.gif](tag.gif)

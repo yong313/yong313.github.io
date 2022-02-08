@@ -4,7 +4,7 @@ title: Modal 만들기
 date: '2022-02-05 23:15:00'
 author: 전용태
 tags: 모달만들기, Modal, ReactModal
-categories: React
+categories: 뚝딱만들기
 ---
 
 ![modal.gif](modal.gif)
