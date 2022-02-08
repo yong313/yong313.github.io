@@ -9,7 +9,7 @@ categories: React
 
 ![react-img-00.png](react-img-00.png)
 
-## ✨ Hook이란?
+## ✨ 먼저 Hook이란?
 
 - 함수 컴포넌트에서 React state와 Lifecycle 기능을 연동할 수 있게 해주는 함수 (버전 16.8부터 도입)
 - 만들어진 목적 자체가 함수 컴포넌트에서 사용하기 위함이었으니 당연히 클래스 컴포넌트 안에서는 동작하지 않음

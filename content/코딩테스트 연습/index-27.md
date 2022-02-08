@@ -7,6 +7,8 @@ tags: 프로그래머스, programmers, 알고리즘, 알고리즘연습
 categories: 알고리즘연습
 ---
 
+![img_a.png](img_a.png)
+
 # Lv.1 - 
 콜라츠 추측 🤬
 
