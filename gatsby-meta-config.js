@@ -2,7 +2,7 @@ module.exports = {
   title: `yong313.com`,
   description: `전용태의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://yong313.com`,
+  siteUrl: `https://yong313.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
@@ -14,7 +14,7 @@ module.exports = {
     name: `전용태`,
     bio: {
       role: `개발자`,
-      description: ['새로운 도약을 꿈꾸는', '열정적인 자세의', '이로운 것을 만드는'],
+      description: ['이로운 것을 만드는', '새로운 도약을 꿈꾸는', '열정적인 자세의'],
       thumbnail: 'main.gif', // Path to the image in the 'asset' folder
     },
     social: {
