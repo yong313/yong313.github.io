@@ -167,6 +167,23 @@
 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>commentList<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">MSGBox</span></span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>commentScroll<span class="token punctuation">}</span></span><span class="token punctuation">></span></span></code></pre></div>
+<br />
+<h2 id="-댓글-등록-후-input값-초기화" style="position:relative;"><a href="#-%EB%8C%93%EA%B8%80-%EB%93%B1%EB%A1%9D-%ED%9B%84-input%EA%B0%92-%EC%B4%88%EA%B8%B0%ED%99%94" aria-label=" 댓글 등록 후 input값 초기화 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>+ 댓글 등록 후 input값 초기화</h2>
+<p>뒤늦게 찾은 문제다.. 댓글을 등록 후 input에 작성한 내용이 그대로 남아있다. 댓글 등록 버튼을 클릭 시 useRef 값을 비워주는 코드를 추가하여 문제를 해결하였다.</p>
+<br />
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// 저장 버튼</span>
+<span class="token keyword">const</span> <span class="token function-variable function">inputHandler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">saveComment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 로컬에 저장된 값 - setCommentList에 저장해둔 값을 get으로 가져오기</span>
+  <span class="token function">setCommentList</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'saveComment'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 초기화</span>
+  nickName<span class="token punctuation">.</span>current<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  comment<span class="token punctuation">.</span>current<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<br />
+<p><img src="/9330cd364362bd5a624dea51fa4265d0/0226_gif_v3.gif" alt="0226_gif_v3.gif"></p>
+<br />
 <h3 id="회고--" style="position:relative;"><a href="#%ED%9A%8C%EA%B3%A0--" aria-label="회고   permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>회고 -</h3>
 <p>처음 유저가 input에 입력한 닉네임과 댓글을 useRef가 아닌 useState로 관리하여 진행했다. console.log로 input에 담긴 값들을 확인하다가 useState를 사용할 경우 글을 입력할 때마다 재랜더링 된다는 사실을 팀원의 조언으로 알게 되었다. 그래서 useRef를 사용하게 된 건데 참 유용한 정보였던 거 같다. 이 부분을 잘 기억하고 다음 프로젝트에서도 알맞게 사용해야겠다.</p>
 <p>팀원들과 프로젝트를 진행 전 상태 관리를 따로 안 해도 구현이 가능할 거 같다는 의견이 모아졌다. 주어진 시간은 짧고 조건은 많았기 때문에 상태 관리 없이 전역으로 관리하여 프로젝트를 진행하고자 한 것이다. 다들 공감하였고 진행했지만 프로젝트가 끝날 쯤 팀원 모두 다음 프로젝트에는 Redux를 사용하자는 의견이 다시 나오기 시작했다. 이유는 코드도 너무 많고 가독성도 떨어지고 사실 불편한 부분이 많았다.</p>
